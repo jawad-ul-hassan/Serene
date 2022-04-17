@@ -30,45 +30,40 @@
             <span class="brand-logo-text">Mental Health and Mindefulness</span>
           </a>
           <nav class="serene-header-nav">
-            <a href="./login.html" class="register-btn">Login</a>
             <a href="./register.html" class="register-btn">Register</a>
           </nav>
           <i id="menu-bar" class="fas fa-bars"></i>
         </div>
       </div>
     </header>
+
     <div class="wrapper">
-      <!-- Hero-Section -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-desc">
-              <h1 class="hero-desc-title">
-                Welcome <span class="hero-desc-user">John Doe!</span>
-              </h1>
-              <p class="hero-desc-text">
-                What would you like to explore today?
-              </p>
-            </div>
-            <div class="hero-banner floating">
-              <img
-                src="./assets/images/hero-home-banner.svg"
-                alt="Mindfulness"
+      <!-- Login-Section -->
+      <section class="login">
+        <div class="login-card">
+          <div class="login-user-icon"><i class="fas fa-user"></i></div>
+          <form class="login-form">
+            <div class="login-form-group">
+              <label for="login-email">Email</label>
+              <input
+                type="email"
+                id="login-email"
+                name="login-email"
+                required
               />
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="login-form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                required
+              />
+            </div>
 
-      <!-- Tabs-Section -->
-      <section class="tabs">
-        <div class="container">
-          <div class="tabs-content">
-            <a href="#" class="btn btn-meditation">Meditation</a>
-            <a href="#" class="btn btn-sleep">Sleep Better</a>
-            <a href="#" class="btn btn-depression">Depression</a>
-            <a href="#" class="btn btn-connect">Connect</a>
-          </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
         </div>
       </section>
     </div>
