@@ -3,6 +3,8 @@
 .serene-header {
   padding: 1.5rem 0;
   border-bottom: 1px solid #777777;
+  position: relative;
+  z-index: 2;
 }
 
 .header-content {
@@ -34,6 +36,7 @@
   display: flex;
   align-items: center;
   column-gap: 3.5rem;
+  transition: 300ms ease;
 }
 
 .login-btn {
@@ -173,7 +176,7 @@
 /* Footer */
 .footer {
   border-top: 1px solid #777777;
-  padding: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 .footer-text {
@@ -185,10 +188,86 @@
   font-size: 1.6rem;
 }
 
+#menu-bar {
+  display: none;
+}
+
 /* ----------Media Queries Responsive Design---------- */
 
 @media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    row-gap: 3.5rem;
+  }
+
+  .hero-desc {
+    order: 2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu-bar {
+    display: block;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+
+  .serene-header-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    gap: 2.5rem;
+    background-color: #253334;
+  }
+
+  .serene-header-nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .register-btn,
+  .login-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .btn {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .hero,
+  .tabs {
+    margin: 2.5rem 0;
+  }
+
   .hero-banner > img {
-    width: 45rem;
+    width: 100%;
+  }
+
+  .hero-desc-title {
+    font-size: 4.2rem;
+  }
+
+  .hero-desc-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand-logo-text {
+    display: none;
+  }
+
+  .serene-header-logo > img {
+    width: 8rem;
   }
 }
