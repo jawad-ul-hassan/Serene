@@ -1,0 +1,63 @@
+/* Header */
+
+.serene-header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #777777;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.serene-header-logo {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 1.5rem;
+}
+
+.brand-logo-text {
+  font-family: 'Lobster', cursive;
+  line-height: 1.1;
+  font-size: 2.2rem;
+}
+
+.serene-header-logo > img {
+  display: block;
+  width: 10rem;
+  object-fit: cover;
+}
+
+.serene-header-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.login-btn {
+  display: block;
+  width: 12rem;
+  padding: 10px;
+  text-align: center;
+  background-color: #60c2e6;
+  font-size: 2rem;
+  border: 1px solid #60c2e6;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+}
+
+.register-btn {
+  display: block;
+  width: 12rem;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #60c2e6;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+}
