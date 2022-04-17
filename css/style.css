@@ -260,6 +260,10 @@
   .hero-desc-text {
     font-size: 1.6rem;
   }
+
+  .footer-text {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 500px) {
