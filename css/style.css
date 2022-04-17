@@ -14,7 +14,7 @@
 
 .serene-header-logo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   column-gap: 1.5rem;
 }
 
@@ -43,7 +43,7 @@
   text-align: center;
   background-color: #60c2e6;
   font-size: 2rem;
-  border: 1px solid #60c2e6;
+  border: 3px solid #60c2e6;
   font-weight: 500;
   letter-spacing: 1.5px;
   border-radius: 10px;
@@ -55,9 +55,140 @@
   padding: 10px;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #60c2e6;
+  border: 3px solid #60c2e6;
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1.5px;
   border-radius: 10px;
+}
+
+/* Hero-Section */
+
+.hero {
+  margin: 5rem 0;
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.hero-banner,
+.hero-desc {
+  flex: 1 1 30%;
+}
+
+.hero-banner > img {
+  width: 50rem;
+
+  object-fit: cover;
+}
+
+.hero-desc-title {
+  font-size: 5.2rem;
+  font-weight: 500;
+}
+
+.hero-desc-user {
+  color: #25ade2;
+}
+
+.hero-desc-text {
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+/* Floating Animation */
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Tabs-Section */
+
+.tabs {
+  margin: 5rem 0;
+  width: 100%;
+}
+
+.tabs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: block;
+  flex: 1 1 40%;
+  text-align: center;
+  background-color: transparent;
+  font-size: 2rem;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 300ms ease;
+}
+
+.btn-meditation {
+  background-color: #0093ab;
+}
+
+.btn-sleep {
+  background-color: #827397;
+}
+
+.btn-depression {
+  background-color: #bb9981;
+}
+
+.btn-connect {
+  background-color: #2fa4ff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #777777;
+  padding: 2.5rem;
+}
+
+.footer-text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.footer-text > i {
+  font-size: 1.6rem;
+}
+
+/* ----------Media Queries Responsive Design---------- */
+
+@media (max-width: 992px) {
+  .hero-banner > img {
+    width: 45rem;
+  }
 }
