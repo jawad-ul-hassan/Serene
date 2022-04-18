@@ -353,7 +353,15 @@
   }
 
   .wrapper {
-    margin: 5rem 0;
+    margin: 8rem 0;
+  }
+
+  .login-user-icon {
+    width: 11rem;
+    height: 11rem;
+    margin: 0 auto;
+    margin-top: -8rem;
+    font-size: 5rem;
   }
 }
 
