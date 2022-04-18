@@ -5,43 +5,43 @@ const playlist = [
   {
     title: 'Guided-Meditation-1',
     src: '../assets/audios/meditation-audios/Guided-Meditation-1.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
 
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-2',
     src: '../assets/audios/meditation-audios/Guided-Meditation-2.mp3',
-    poster: '../assets/images/5uwq.gif',
+    pposter: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-3',
     src: '../assets/audios/meditation-audios/Guided-Meditation-3.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-4',
     src: '../assets/audios/meditation-audios/Guided-Meditation-4.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-5',
     src: '../assets/audios/meditation-audios/Guided-Meditation-5.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-6',
     src: '../assets/audios/meditation-audios/Guided-Meditation-6.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-7',
     src: '../assets/audios/meditation-audios/Guided-Meditation-7.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
   {
-    title: 'Guided-Meditation-1',
+    title: 'Guided-Meditation-8',
     src: '../assets/audios/meditation-audios/Guided-Meditation-8.mp3',
-    poster: '../assets/images/5uwq.gif',
+    poster: '../assets/images/Nt6v.gif',
   },
 ];
 

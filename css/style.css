@@ -334,7 +334,7 @@ audio {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 20rem;
+  height: 25rem;
 }
 
 .mp_head_poster img {
@@ -378,10 +378,6 @@ audio {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 10px;
-}
-
-.mp_body ol li a:last-child {
-  margin-bottom: 0;
 }
 
 .mp_body ol li a b {
