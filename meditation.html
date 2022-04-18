@@ -10,11 +10,13 @@
       type="image/x-icon"
     />
     <title>Serene - Mental Health & Mindefulness</title>
+
     <!-- Font Awesome Link -->
     <script
       src="https://kit.fontawesome.com/6255250c8f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- Custom CSS -->
@@ -49,6 +51,31 @@
     <!-- <div class="wrapper"></div> -->
     <div class="feed-container">
       <!-- Quote-Section -->
+      <section class="quote">
+        <div class="quote-content">
+          <p class="quote-line">
+            <sup><i class="quote-icon fas fa-quote-left"></i></sup> Your calm
+            mind is the ultimate weapon against your challenges. So relax.
+            <sup><i class="quote-icon fas fa-quote-right"></i></sup>
+          </p>
+          <h3 class="quote-author">- Bryant McGill</h3>
+        </div>
+      </section>
+
+      <!-- Audio-Section -->
+      <section class="meditation-player">
+        <div class="demo">
+          <div class="mp">
+            <header class="mp_head">
+              <figure class="mp_head_poster">
+                <img src="./assets/images/5uwq.gif" />
+              </figure>
+            </header>
+            <section class="mp_body"><ol></ol></section>
+            <footer class="mp_footer"></footer>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -61,6 +88,7 @@
       </div>
     </footer>
 
+    <script src="./js/audio-player.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

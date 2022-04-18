@@ -221,7 +221,7 @@
   width: 100%;
   font-size: 1.6rem;
   font-weight: 400;
-  padding: 10px;
+  padding: 12px;
   border: 0;
   background-color: #dddddd;
   border-radius: 5px;
@@ -275,6 +275,147 @@
   padding: 0.75rem 1.5rem;
   position: absolute;
   bottom: 0;
+}
+
+.feed-container {
+  max-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.quote {
+  margin: 3.5rem auto;
+}
+
+.quote-content {
+  text-align: center;
+}
+
+.quote-line {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.quote-icon {
+  font-size: 1.6rem;
+  padding: 0 0.5rem;
+  color: #0093ab;
+}
+
+.quote-author {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  color: #bb9981;
+}
+
+/* Audio-Player */
+
+.meditation-player {
+  margin: 5rem 0;
+}
+
+.demo {
+  width: 100%;
+}
+
+audio {
+  border-radius: 0;
+  width: 100%;
+}
+
+.mp {
+  background: transparent;
+  box-shadow: 0px 8px 20px -6px #000;
+}
+
+.mp_head_poster {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 20rem;
+}
+
+.mp_head_poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+.mp_body {
+  background: transparent;
+  max-height: 15em;
+  overflow-y: scroll;
+  padding: 0.85rem;
+  font-size: 1.6rem;
+}
+
+.mp_body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mp_body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+
+.mp_body::-webkit-scrollbar-thumb {
+  background-color: #777777;
+}
+
+.mp_body ol li a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #f1f1f1;
+  transition: background 500ms ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.mp_body ol li a:last-child {
+  margin-bottom: 0;
+}
+
+.mp_body ol li a b {
+  color: #f1f1f1;
+  padding-right: 15px;
+  font-size: 2rem;
+}
+
+.mp_body ol li a:hover,
+.mp_body ol li a:focus,
+.mp_body ol li a.active {
+  background: #0093ab;
+  transition: background 500ms ease;
+}
+
+.mp_body ol li a.error {
+  background: #f55;
+  border-color: #f55;
+  color: #fff;
+  transition: background 500ms ease;
+  animation: zoomit 800ms infinite ease;
+}
+
+@keyframes zoomit {
+  from {
+    transform: scale(0.95);
+  }
+}
+
+.mp_footer {
+  margin: 0;
+  padding: 0;
+  background: #f2f3f4;
+  position: relative;
 }
 
 /* ----------Media Queries Responsive Design---------- */
@@ -352,7 +493,7 @@
     padding: 2.5rem;
   }
 
-  .wrapper {
+  .form-wrapper {
     margin: 8rem 0;
   }
 
@@ -362,6 +503,10 @@
     margin: 0 auto;
     margin-top: -8rem;
     font-size: 5rem;
+  }
+
+  .mediatation-banner {
+    height: 350px;
   }
 }
 
