@@ -176,7 +176,7 @@
   display: none;
 }
 
-/* ----------Login-Page---------- */
+/* ----------Login-Page & Register Page---------- */
 .login {
   border: 1px solid #dddddd;
   border-radius: 8px;
@@ -243,6 +243,38 @@
   margin: 0 auto;
   margin-top: 2.5rem;
   cursor: pointer;
+}
+
+/* ----------Meditation Page---------- */
+.meditation {
+  width: 100%;
+}
+
+.mediatation-banner {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 51, 52, 0.3),
+      rgba(37, 51, 52, 0.3)
+    ),
+    url('../assets/images/yoga-3338691_1280.jpg');
+  height: 555px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 5px solid #0093ab;
+  border-bottom: 5px solid #0093ab;
+  border-left: 5px solid #0093ab;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.meditation-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  bottom: 0;
 }
 
 /* ----------Media Queries Responsive Design---------- */
@@ -318,6 +350,10 @@
 
   .login {
     padding: 2.5rem;
+  }
+
+  .wrapper {
+    margin: 5rem 0;
   }
 }
 
