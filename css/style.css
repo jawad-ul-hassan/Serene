@@ -250,13 +250,13 @@
   width: 100%;
 }
 
-.mediatation-banner {
+.meditation-banner {
   background: linear-gradient(
       0deg,
       rgba(37, 51, 52, 0.3),
       rgba(37, 51, 52, 0.3)
     ),
-    url('../assets/images/yoga-3338691_1280.jpg');
+    url('../assets/images/meditation-banner.jpg');
   height: 555px;
   background-size: cover;
   background-position: center;
@@ -312,11 +312,13 @@
 
 /* Audio-Player */
 
-.meditation-player {
+.meditation-player,
+.sleep-player {
   margin: 5rem 0;
 }
 
-.demo {
+.demo,
+.demo-sleep {
   width: 100%;
 }
 
@@ -325,19 +327,22 @@ audio {
   width: 100%;
 }
 
-.mp {
+.mp,
+.mp-sleep {
   background: transparent;
   box-shadow: 0px 8px 20px -6px #000;
 }
 
-.mp_head_poster {
+.mp_head_poster,
+.mp_head_poster-sleep {
   margin: 0;
   padding: 0;
   overflow: hidden;
   height: 25rem;
 }
 
-.mp_head_poster img {
+.mp_head_poster img,
+.mp_head_poster-sleep img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -346,7 +351,8 @@ audio {
   transition: all 500ms ease;
 }
 
-.mp_body {
+.mp_body,
+.mp_body-sleep {
   background: transparent;
   max-height: 15em;
   overflow-y: scroll;
@@ -354,19 +360,23 @@ audio {
   font-size: 1.6rem;
 }
 
-.mp_body::-webkit-scrollbar {
+.mp_body::-webkit-scrollbar,
+.mp_body-sleep::-webkit-scrollbar {
   width: 10px;
 }
 
-.mp_body::-webkit-scrollbar-track {
+.mp_body::-webkit-scrollbar-track,
+.mp_body-sleep::-webkit-scrollbar-track {
   background-color: #e4e4e4;
 }
 
-.mp_body::-webkit-scrollbar-thumb {
+.mp_body::-webkit-scrollbar-thumb,
+.mp_body-sleep::-webkit-scrollbar-thumb {
   background-color: #777777;
 }
 
-.mp_body ol li a {
+.mp_body ol li a,
+.mp_body-sleep ol li a {
   display: block;
   padding: 1rem;
   width: 100%;
@@ -380,7 +390,8 @@ audio {
   margin-bottom: 10px;
 }
 
-.mp_body ol li a b {
+.mp_body ol li a b,
+.mp_body-sleep ol li a b {
   color: #f1f1f1;
   padding-right: 15px;
   font-size: 2rem;
@@ -393,7 +404,15 @@ audio {
   transition: background 500ms ease;
 }
 
-.mp_body ol li a.error {
+.mp_body-sleep ol li a:hover,
+.mp_body-sleep ol li a:focus,
+.mp_body-sleep ol li a.active {
+  background: #827397;
+  transition: background 500ms ease;
+}
+
+.mp_body ol li a.error,
+.mp_body-sleep ol li a.error {
   background: #f55;
   border-color: #f55;
   color: #fff;
@@ -407,11 +426,50 @@ audio {
   }
 }
 
-.mp_footer {
+.mp_footer,
+.mp_footer-sleep {
   margin: 0;
   padding: 0;
   background: #f2f3f4;
   position: relative;
+}
+
+/* Sleep-Better Page */
+
+/* ----------Meditation Page---------- */
+.sleep {
+  width: 100%;
+}
+
+.sleep-banner {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 51, 52, 0.3),
+      rgba(37, 51, 52, 0.3)
+    ),
+    url('../assets/images/sleep-better.jpg');
+  height: 555px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 5px solid #827397;
+  border-bottom: 5px solid #827397;
+  border-left: 5px solid #827397;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.sleep-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.sleep-better .quote-icon {
+  color: #827397;
 }
 
 /* ----------Media Queries Responsive Design---------- */
@@ -501,7 +559,8 @@ audio {
     font-size: 5rem;
   }
 
-  .mediatation-banner {
+  .mediatation-banner,
+  .sleep-banner {
     height: 350px;
   }
 }
