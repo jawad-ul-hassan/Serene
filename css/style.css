@@ -278,7 +278,7 @@
 }
 
 .feed-container {
-  max-width: 767px;
+  max-width: 825px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -434,9 +434,7 @@ audio {
   position: relative;
 }
 
-/* Sleep-Better Page */
-
-/* ----------Meditation Page---------- */
+/* ----------Sleep-Better Page---------- */
 .sleep {
   width: 100%;
 }
@@ -470,6 +468,203 @@ audio {
 
 .sleep-better .quote-icon {
   color: #827397;
+}
+
+/* ----------Depression & Anxiety Page---------- */
+.depression {
+  width: 100%;
+}
+
+.depression-banner {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 51, 52, 0.3),
+      rgba(37, 51, 52, 0.3)
+    ),
+    url('../assets/images/depression-anxiety.jpeg');
+  height: 555px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 5px solid #bb9981;
+  border-bottom: 5px solid #bb9981;
+  border-left: 5px solid #bb9981;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.depression-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.depression-page .quote-icon {
+  color: #bb9981;
+}
+
+.depression-content {
+  margin: 5rem 0;
+  text-align: justify;
+}
+
+.depression-content-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #bb9981;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.border-line {
+  width: 28rem;
+  margin: 5rem auto;
+  border-top: 2px dashed #777777;
+}
+
+.depression-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.m-text {
+  margin: 1.5rem 0;
+}
+
+.depression-list {
+  margin: 2.5rem 0;
+}
+
+.depression-list-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  color: #60c2e6;
+}
+
+.depression-list li {
+  list-style: decimal;
+  margin-left: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.depression-list li::marker {
+  color: #60c2e6;
+}
+
+.depression-content-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.depression-content-images > img {
+  display: block;
+  width: 24rem;
+  flex: 1 1 33%;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.depression-content-images > img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.overcome-ways {
+  margin: 2.5rem 0;
+}
+
+.overcome-ways-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  color: #60c2e6;
+}
+
+.overcome-timeline {
+  min-width: 250px;
+  max-width: 825px;
+  margin: auto;
+}
+
+.overcome-content-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #bb9981;
+  text-transform: capitalize;
+}
+
+.overcome-content > p {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.overcome-content {
+  font-size: 1.6rem;
+  border-top: 3px solid #bb9981;
+  margin: 0;
+  padding: 25px;
+  counter-increment: section;
+  position: relative;
+  color: #ffffff;
+}
+
+.overcome-content:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #60c2e6;
+  text-align: center;
+  line-height: 3.2rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.overcome-content:nth-child(odd) {
+  border-right: 3px solid #bb9981;
+  padding-left: 0;
+}
+.overcome-content:nth-child(odd):before {
+  left: 100%;
+  margin-left: -15px;
+}
+
+.overcome-content:nth-child(even) {
+  border-left: 3px solid #bb9981;
+  padding-right: 0;
+}
+.overcome-content:nth-child(even):before {
+  right: 100%;
+  margin-right: -15px;
+}
+
+.overcome-content:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.overcome-content:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.depression-page .quote-author {
+  color: #60c2e6;
 }
 
 /* ----------Media Queries Responsive Design---------- */
@@ -559,8 +754,9 @@ audio {
     font-size: 5rem;
   }
 
-  .mediatation-banner,
-  .sleep-banner {
+  .meditation-banner,
+  .sleep-banner,
+  .depression-banner {
     height: 350px;
   }
 }
