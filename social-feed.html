@@ -4,20 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Media Feed</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Serene-Logo-Smart.png"
+      type="image/x-icon"
+    />
+    <title>Serene - Mental Health & Mindefulness</title>
+
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form class="form">
-      <div class="form-group">
-        <textarea name="post" id="post" cols="30" rows="10" required></textarea>
+    <!-- Header -->
+    <header class="serene-header">
+      <div class="container">
+        <div class="header-content">
+          <a href="./index.html" class="serene-header-logo">
+            <img src="./assets/images/Serene-Logo-Smart.png" alt="Serene" />
+            <span class="brand-logo-text">Mental Health and Mindefulness</span>
+          </a>
+          <nav class="serene-header-nav">
+            <a href="./login.html" class="register-btn" id="login">Login</a>
+            <a href="./register.html" class="register-btn" id="register"
+              >Register</a
+            >
+          </nav>
+          <i id="menu-bar" class="fas fa-bars"></i>
+        </div>
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn">Post</button>
-      </div>
-    </form>
-    <div class="post-area"></div>
-  </body>
+    </header>
 
-  <script src="./js/home.js"></script>
-  <script type="module" src="./js/socialFeed.js"></script>
+    <!-- Social-Input -->
+    <div class="social-feed-container">
+      <form class="form">
+        <div class="form-group">
+          <textarea
+            name="post"
+            id="post"
+            rows="8"
+            required
+            placeholder="What's on your mind?"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-post">Post</button>
+        </div>
+      </form>
+    </div>
+    <!-- Social-Feed -->
+
+    <div class="post-area"></div>
+
+    <script type="module" src="./js/socialFeed.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
