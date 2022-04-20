@@ -245,6 +245,10 @@
   cursor: pointer;
 }
 
+.form-wrapper {
+  margin: 14rem 0;
+}
+
 /* ----------Meditation Page---------- */
 .meditation {
   width: 100%;
@@ -304,7 +308,7 @@
 }
 
 .quote-author {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
   padding-top: 0.5rem;
   color: #bb9981;
@@ -508,7 +512,6 @@ audio {
 
 .depression-content {
   margin: 5rem 0;
-  text-align: justify;
 }
 
 .depression-content-title {
@@ -740,10 +743,6 @@ audio {
 
   .login {
     padding: 2.5rem;
-  }
-
-  .form-wrapper {
-    margin: 8rem 0;
   }
 
   .login-user-icon {
