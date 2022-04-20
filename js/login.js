@@ -9,7 +9,7 @@ import {
   collection,
   getDocs,
   where,
-  doc,
+  query,
 } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -34,7 +34,8 @@ form.addEventListener("submit", (e) => {
   const password = document.querySelector("#login-password").value;
   signInWithEmailAndPassword(auth, email, password)
     .then((cred) => {
-      getDocs(collection(db, "users"), where("uid", "==", cred.user.uid))
+      const q = query(collection(db, "users"), where("email", "==", email));
+      getDocs(q)
         .then((snapshot) => {
           const user = snapshot.docs[0].data();
           localStorage.setItem("user", user.username);
