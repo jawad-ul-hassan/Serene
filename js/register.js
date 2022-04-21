@@ -12,12 +12,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCfr5JxEnZay7bcDSRSbod-BT9qJvv2IFQ",
-  authDomain: "serene-4161c.firebaseapp.com",
-  projectId: "serene-4161c",
-  storageBucket: "serene-4161c.appspot.com",
-  messagingSenderId: "1013532091693",
-  appId: "1:1013532091693:web:7a81eb71186ed251c25fa4",
+  apiKey: "AIzaSyAcH8nGdHT_oz_wkeu9mOZQ9ODlrVrcavg",
+  authDomain: "serene-f9cf3.firebaseapp.com",
+  projectId: "serene-f9cf3",
+  storageBucket: "serene-f9cf3.appspot.com",
+  messagingSenderId: "766948746277",
+  appId: "1:766948746277:web:e2d1a38de1346d8c1e4bcc",
 };
 
 // Initialize Firebase
